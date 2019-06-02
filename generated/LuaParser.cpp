@@ -1,5 +1,5 @@
 
-// Generated from Lua.g4 by ANTLR 4.7.1
+// Generated from Lua.g4 by ANTLR 4.7.2
 
 
 #include "LuaVisitor.h"
@@ -49,6 +49,7 @@ tree::TerminalNode* LuaParser::ChunkContext::EOF() {
 size_t LuaParser::ChunkContext::getRuleIndex() const {
   return LuaParser::RuleChunk;
 }
+
 
 antlrcpp::Any LuaParser::ChunkContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -103,6 +104,7 @@ LuaParser::RetstatContext* LuaParser::BlockContext::retstat() {
 size_t LuaParser::BlockContext::getRuleIndex() const {
   return LuaParser::RuleBlock;
 }
+
 
 antlrcpp::Any LuaParser::BlockContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -233,6 +235,7 @@ LuaParser::LocalVarDeclContext* LuaParser::StatContext::localVarDecl() {
 size_t LuaParser::StatContext::getRuleIndex() const {
   return LuaParser::RuleStat;
 }
+
 
 antlrcpp::Any LuaParser::StatContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -396,6 +399,7 @@ size_t LuaParser::VarDeclContext::getRuleIndex() const {
   return LuaParser::RuleVarDecl;
 }
 
+
 antlrcpp::Any LuaParser::VarDeclContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitVarDecl(this);
@@ -466,6 +470,7 @@ tree::TerminalNode* LuaParser::FunctioncallContext::SEMI() {
 size_t LuaParser::FunctioncallContext::getRuleIndex() const {
   return LuaParser::RuleFunctioncall;
 }
+
 
 antlrcpp::Any LuaParser::FunctioncallContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -545,6 +550,7 @@ size_t LuaParser::GotoStatContext::getRuleIndex() const {
   return LuaParser::RuleGotoStat;
 }
 
+
 antlrcpp::Any LuaParser::GotoStatContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitGotoStat(this);
@@ -598,6 +604,7 @@ tree::TerminalNode* LuaParser::DoStatContext::END() {
 size_t LuaParser::DoStatContext::getRuleIndex() const {
   return LuaParser::RuleDoStat;
 }
+
 
 antlrcpp::Any LuaParser::DoStatContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -662,6 +669,7 @@ tree::TerminalNode* LuaParser::WhileStatContext::END() {
 size_t LuaParser::WhileStatContext::getRuleIndex() const {
   return LuaParser::RuleWhileStat;
 }
+
 
 antlrcpp::Any LuaParser::WhileStatContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -730,6 +738,7 @@ tree::TerminalNode* LuaParser::RepeatStatContext::SEMI() {
 size_t LuaParser::RepeatStatContext::getRuleIndex() const {
   return LuaParser::RuleRepeatStat;
 }
+
 
 antlrcpp::Any LuaParser::RepeatStatContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -831,6 +840,7 @@ tree::TerminalNode* LuaParser::IfStatContext::ELSE() {
 size_t LuaParser::IfStatContext::getRuleIndex() const {
   return LuaParser::RuleIfStat;
 }
+
 
 antlrcpp::Any LuaParser::IfStatContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -947,6 +957,7 @@ size_t LuaParser::ForStatContext::getRuleIndex() const {
   return LuaParser::RuleForStat;
 }
 
+
 antlrcpp::Any LuaParser::ForStatContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitForStat(this);
@@ -1042,6 +1053,7 @@ size_t LuaParser::ForInStatContext::getRuleIndex() const {
   return LuaParser::RuleForInStat;
 }
 
+
 antlrcpp::Any LuaParser::ForInStatContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitForInStat(this);
@@ -1106,6 +1118,7 @@ size_t LuaParser::FuncStatContext::getRuleIndex() const {
   return LuaParser::RuleFuncStat;
 }
 
+
 antlrcpp::Any LuaParser::FuncStatContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitFuncStat(this);
@@ -1165,6 +1178,7 @@ LuaParser::FuncbodyContext* LuaParser::LocalFuncStatContext::funcbody() {
 size_t LuaParser::LocalFuncStatContext::getRuleIndex() const {
   return LuaParser::RuleLocalFuncStat;
 }
+
 
 antlrcpp::Any LuaParser::LocalFuncStatContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -1231,6 +1245,7 @@ tree::TerminalNode* LuaParser::LocalVarDeclContext::SEMI() {
 size_t LuaParser::LocalVarDeclContext::getRuleIndex() const {
   return LuaParser::RuleLocalVarDecl;
 }
+
 
 antlrcpp::Any LuaParser::LocalVarDeclContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -1307,6 +1322,7 @@ tree::TerminalNode* LuaParser::RetstatContext::SEMI() {
 size_t LuaParser::RetstatContext::getRuleIndex() const {
   return LuaParser::RuleRetstat;
 }
+
 
 antlrcpp::Any LuaParser::RetstatContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -1396,6 +1412,7 @@ size_t LuaParser::LabelContext::getRuleIndex() const {
   return LuaParser::RuleLabel;
 }
 
+
 antlrcpp::Any LuaParser::LabelContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitLabel(this);
@@ -1459,6 +1476,7 @@ tree::TerminalNode* LuaParser::FuncnameContext::COLON() {
 size_t LuaParser::FuncnameContext::getRuleIndex() const {
   return LuaParser::RuleFuncname;
 }
+
 
 antlrcpp::Any LuaParser::FuncnameContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -1539,6 +1557,7 @@ size_t LuaParser::VarlistContext::getRuleIndex() const {
   return LuaParser::RuleVarlist;
 }
 
+
 antlrcpp::Any LuaParser::VarlistContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitVarlist(this);
@@ -1607,6 +1626,7 @@ tree::TerminalNode* LuaParser::NamelistContext::COMMA(size_t i) {
 size_t LuaParser::NamelistContext::getRuleIndex() const {
   return LuaParser::RuleNamelist;
 }
+
 
 antlrcpp::Any LuaParser::NamelistContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -1678,6 +1698,7 @@ tree::TerminalNode* LuaParser::ExplistContext::COMMA(size_t i) {
 size_t LuaParser::ExplistContext::getRuleIndex() const {
   return LuaParser::RuleExplist;
 }
+
 
 antlrcpp::Any LuaParser::ExplistContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -1784,6 +1805,7 @@ size_t LuaParser::ExpContext::getRuleIndex() const {
   return LuaParser::RuleExp;
 }
 
+
 antlrcpp::Any LuaParser::ExpContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitExp(this);
@@ -1801,6 +1823,7 @@ LuaParser::ExpContext* LuaParser::exp(int precedence) {
   size_t parentState = getState();
   LuaParser::ExpContext *_localctx = _tracker.createInstance<ExpContext>(_ctx, parentState);
   LuaParser::ExpContext *previousContext = _localctx;
+  (void)previousContext; // Silence compiler, in case the context is not used by generated code.
   size_t startState = 42;
   enterRecursionRule(_localctx, 42, LuaParser::RuleExp, precedence);
 
@@ -1944,6 +1967,7 @@ size_t LuaParser::PrefixexpContext::getRuleIndex() const {
   return LuaParser::RulePrefixexp;
 }
 
+
 antlrcpp::Any LuaParser::PrefixexpContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitPrefixexp(this);
@@ -2012,6 +2036,7 @@ tree::TerminalNode* LuaParser::VarOrExpContext::RP() {
 size_t LuaParser::VarOrExpContext::getRuleIndex() const {
   return LuaParser::RuleVarOrExp;
 }
+
 
 antlrcpp::Any LuaParser::VarOrExpContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -2095,6 +2120,7 @@ LuaParser::VarSuffixContext* LuaParser::VarContext::varSuffix(size_t i) {
 size_t LuaParser::VarContext::getRuleIndex() const {
   return LuaParser::RuleVar;
 }
+
 
 antlrcpp::Any LuaParser::VarContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -2199,6 +2225,7 @@ size_t LuaParser::VarSuffixContext::getRuleIndex() const {
   return LuaParser::RuleVarSuffix;
 }
 
+
 antlrcpp::Any LuaParser::VarSuffixContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitVarSuffix(this);
@@ -2290,6 +2317,7 @@ size_t LuaParser::NameAndArgsContext::getRuleIndex() const {
   return LuaParser::RuleNameAndArgs;
 }
 
+
 antlrcpp::Any LuaParser::NameAndArgsContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitNameAndArgs(this);
@@ -2360,6 +2388,7 @@ LuaParser::StringContext* LuaParser::ArgsContext::string() {
 size_t LuaParser::ArgsContext::getRuleIndex() const {
   return LuaParser::RuleArgs;
 }
+
 
 antlrcpp::Any LuaParser::ArgsContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -2465,6 +2494,7 @@ size_t LuaParser::FunctiondefContext::getRuleIndex() const {
   return LuaParser::RuleFunctiondef;
 }
 
+
 antlrcpp::Any LuaParser::FunctiondefContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitFunctiondef(this);
@@ -2526,6 +2556,7 @@ LuaParser::ParlistContext* LuaParser::FuncbodyContext::parlist() {
 size_t LuaParser::FuncbodyContext::getRuleIndex() const {
   return LuaParser::RuleFuncbody;
 }
+
 
 antlrcpp::Any LuaParser::FuncbodyContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -2595,6 +2626,7 @@ tree::TerminalNode* LuaParser::ParlistContext::ELLIPSIS() {
 size_t LuaParser::ParlistContext::getRuleIndex() const {
   return LuaParser::RuleParlist;
 }
+
 
 antlrcpp::Any LuaParser::ParlistContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -2675,6 +2707,7 @@ LuaParser::FieldlistContext* LuaParser::TableconstructorContext::fieldlist() {
 size_t LuaParser::TableconstructorContext::getRuleIndex() const {
   return LuaParser::RuleTableconstructor;
 }
+
 
 antlrcpp::Any LuaParser::TableconstructorContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -2762,6 +2795,7 @@ LuaParser::FieldsepContext* LuaParser::FieldlistContext::fieldsep(size_t i) {
 size_t LuaParser::FieldlistContext::getRuleIndex() const {
   return LuaParser::RuleFieldlist;
 }
+
 
 antlrcpp::Any LuaParser::FieldlistContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -2853,6 +2887,7 @@ size_t LuaParser::FieldContext::getRuleIndex() const {
   return LuaParser::RuleField;
 }
 
+
 antlrcpp::Any LuaParser::FieldContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitField(this);
@@ -2935,6 +2970,7 @@ size_t LuaParser::FieldsepContext::getRuleIndex() const {
   return LuaParser::RuleFieldsep;
 }
 
+
 antlrcpp::Any LuaParser::FieldsepContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitFieldsep(this);
@@ -2984,6 +3020,7 @@ LuaParser::LinkOperatorContext::LinkOperatorContext(ParserRuleContext *parent, s
 size_t LuaParser::LinkOperatorContext::getRuleIndex() const {
   return LuaParser::RuleLinkOperator;
 }
+
 
 antlrcpp::Any LuaParser::LinkOperatorContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
@@ -3054,6 +3091,7 @@ size_t LuaParser::UnaryOperatorContext::getRuleIndex() const {
   return LuaParser::RuleUnaryOperator;
 }
 
+
 antlrcpp::Any LuaParser::UnaryOperatorContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitUnaryOperator(this);
@@ -3122,6 +3160,7 @@ size_t LuaParser::NumberContext::getRuleIndex() const {
   return LuaParser::RuleNumber;
 }
 
+
 antlrcpp::Any LuaParser::NumberContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
     return parserVisitor->visitNumber(this);
@@ -3185,6 +3224,7 @@ tree::TerminalNode* LuaParser::StringContext::LONGSTRING() {
 size_t LuaParser::StringContext::getRuleIndex() const {
   return LuaParser::RuleString;
 }
+
 
 antlrcpp::Any LuaParser::StringContext::accept(tree::ParseTreeVisitor *visitor) {
   if (auto parserVisitor = dynamic_cast<LuaVisitor*>(visitor))
