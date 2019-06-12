@@ -18,10 +18,23 @@ int main(int argc, const char* argv[]) {
     bool stdIn = parser.hasOption("-si");
     bool stdOut = parser.hasOption("-so") || stdIn;
 
-    string configFileName;
+    string configFileName = "";
 
     if (parser.hasOption("-c")) {
         configFileName = parser.getOption("-c");
+    } else {
+        char* substitute = getenv("XDG_CONFIG_HOME");
+        if (substitute == NULL) {
+            substitute = getenv("HOME");
+            if (substitute != NULL) {
+                configFileName = string(substitute) + "/.config";
+            }
+        } else {
+            configFileName = substitute;
+        }
+        if (!configFileName.empty()) {
+            configFileName = configFileName + "/lua-format/config";
+        }
     }
 
     Config config;
